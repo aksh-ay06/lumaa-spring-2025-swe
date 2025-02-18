@@ -1,0 +1,27 @@
+Create a .env file with these values 
+-----------------------------------------------------------------------------------------------------------------------------------
+# Server Configuration
+PORT=5000
+
+DB_USER=dbusername
+DB_PASSWORD=your_passowrd
+DB_NAME=task_manager
+DB_NAME_TEST=task_manager_test
+DB_NAME_PROD=task_manager_production
+DB_HOST=localhost
+DB_DIALECT=postgres
+DB_PORT=5432
+
+# JWT Secret Key
+JWT_SECRET="YourJWTSecretcanbeanything"
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+To run the backend just use : 
+npm start
+
+This is will start the backend on PORT 5000 (by default i hardcoded the value as an option if you dont specify it in the env file just for development prurposes)
+
+  
