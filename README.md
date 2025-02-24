@@ -241,11 +241,8 @@ For my implementation
 
 ## Salary Expectations
 
-As a developer contributing to this project, my monthly salary expectation is:
+Monthly salary expectation is: **$5,000 USD per month**
 
-**$5,000 USD per month**
-
-This is based on my experience with full-stack development, proficiency in technologies like Node.js, React, TypeScript, and PostgreSQL, and the complexity of the project.
 
 ---
 
