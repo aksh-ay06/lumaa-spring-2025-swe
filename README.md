@@ -98,7 +98,6 @@ This challenge is intended to be completed within ~3 hours, so keep solutions mi
 ---
 
 ## Evaluation Criteria
-
 1. **Functionality**  
    - Does registration and login work correctly (with password hashing)?
    - Are tasks protected by authentication?
@@ -117,3 +116,148 @@ This challenge is intended to be completed within ~3 hours, so keep solutions mi
    - Minimal hard-coded values
 
 Good luck, and we look forward to your submission!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+For my implementation
+
+---
+
+## Table of Contents
+1. [Setup Instructions](#setup-instructions)
+   - [Database Setup](#database-setup)
+   - [Backend Setup](#backend-setup)
+   - [Frontend Setup](#frontend-setup)
+2. [Running the Application](#running-the-application)
+   - [Backend](#backend)
+   - [Frontend](#frontend)
+3. [Testing](#testing)
+4. [Salary Expectations](#salary-expectations)
+
+---
+
+## Setup Instructions
+
+### Database Setup
+
+1. **Install PostgreSQL**:
+   - Ensure PostgreSQL is installed and running on your machine.
+   - Create a database user with sufficient privileges.
+
+2. **Set Environment Variables**:
+   - Create a `.env` file in the `backend/` directory with the following variables:
+     ```env
+     PORT=5000
+     DB_HOST=localhost
+     DB_USER=your_db_user
+     DB_PASSWORD=your_db_password
+     DB_NAME=task_manager
+     DB_DIALECT=postgres
+     JWT_SECRET=your_jwt_secret_key
+     ```
+
+3. **Run Migrations**:
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Run migrations to create the database tables:
+     ```bash
+     npx sequelize-cli db:migrate
+     ```
+
+4. **Seed Data (Optional)**:
+   - If you have seed files, populate the database with initial data:
+     ```bash
+     npx sequelize-cli db:seed:all
+     ```
+
+---
+
+### Backend Setup
+
+1. **Install Dependencies**:
+   - Navigate to the `backend/` directory and install dependencies:
+     ```bash
+     npm install
+     ```
+
+2. **Start the Server**:
+   - Start the backend server:
+     ```bash
+     npm start
+     ```
+   - The server will run on `http://localhost:5000`.
+
+---
+
+### Frontend Setup
+
+1. **Install Dependencies**:
+   - Navigate to the `frontend/` directory and install dependencies:
+     ```bash
+     npm install
+     ```
+
+2. **Set Environment Variables**:
+   - Create a `.env.local` file in the `frontend/` directory with the following variable:
+     ```env
+     NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
+     ```
+
+3. **Start the Development Server**:
+   - Start the frontend development server:
+     ```bash
+     npm run dev
+     ```
+   - The app will be available at `http://localhost:3000`.
+
+---
+
+## Running the Application
+
+### Backend
+
+1. Ensure PostgreSQL is running and the database is set up.
+2. Start the backend server:
+   ```bash
+   npm start
+   ```
+3. Verify the API endpoints using tools like Postman or cURL:
+   - Register: `POST /auth/register`
+   - Login: `POST /auth/login`
+   - Tasks: `GET /tasks`, `POST /tasks`, etc.
+
+### Frontend
+
+1. Ensure the backend server is running.
+2. Start the frontend development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the app in your browser at `http://localhost:3000`.
+
+
+## Salary Expectations
+
+As a developer contributing to this project, my monthly salary expectation is:
+
+**$5,000 USD per month**
+
+This is based on my experience with full-stack development, proficiency in technologies like Node.js, React, TypeScript, and PostgreSQL, and the complexity of the project.
+
+---
+
+## Notes
+
+- Ensure both the backend and frontend are running simultaneously for the app to function correctly.
+- Clear browser cache (`localStorage`) if authentication issues arise after re-cloning the project.
+- For production deployment, use environment variables securely and configure HTTPS.
+
+---
+
+By following these instructions, you should be able to set up, run, and test the application successfully. Let me know if you have any questions!
+
+
+Video link - https://drive.google.com/file/d/1UGM65nayZZ_IloiDtPGRxzvWiHmJYM7G/view?usp=sharing
